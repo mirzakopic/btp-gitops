@@ -1,4 +1,4 @@
-apiVersion: messagequeue.btp.orchestrate.cloud.sap/v1alpha1
+apiVersion: pubsub.messagequeue.btp.orchestrate.cloud.sap/v1alpha1
 kind: Queue
 metadata:
     name: my-queue
