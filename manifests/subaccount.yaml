@@ -1,0 +1,17 @@
+apiVersion: account.btp.orchestrate.cloud.sap/v1alpha1
+kind: Subaccount
+metadata:
+  name: ${subaccount_name}-subaccount-gitops 
+spec:
+  forProvider:
+    displayName: ${subaccount_name}-subaccount-gitops
+    globalAccountRef:
+        name: dcom-global-account
+    betaEnabled: true
+    description: Created at DCom
+    region: eu10
+    subaccountAdmins: 
+      - co_dcom_berlin_demo@sap.com
+      - ${my_sap_email} ## gives you access to subaccount
+    subdomain: ${subaccount_name}-subdomain-gitops  # This value must be unique across all BTP subaccounts
+    usedForProduction: "NOT_USED_FOR_PRODUCTION"

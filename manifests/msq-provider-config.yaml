@@ -1,0 +1,11 @@
+apiVersion: messagequeue.sap.crossplane.io/v1alpha1
+kind: ProviderConfig
+metadata:
+  name: message-provider-config
+spec:
+  credentials:
+    source: Secret
+    secretRef:
+      namespace: default
+      name: message-binding-secret
+      key: baseURL

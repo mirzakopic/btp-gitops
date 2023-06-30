@@ -1,0 +1,25 @@
+apiVersion: services.cloud.sap.com/v1
+kind: ServiceInstance
+metadata:
+  name: message-instance
+  namespace: default
+spec:
+  serviceOfferingName: message-queuing
+  servicePlanName: standard
+  parameters:
+    sourceIPs: 0.0.0.0/0
+    resources:
+      units: "100"
+
+---
+
+apiVersion: services.cloud.sap.com/v1
+kind: ServiceBinding
+metadata:
+  name: msg-service-binding
+spec:
+  serviceInstanceName: message-instance
+  externalName: message-binding
+  secretName: message-binding-secret
+
+---

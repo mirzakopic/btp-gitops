@@ -1,0 +1,12 @@
+apiVersion: account.btp.orchestrate.cloud.sap/v1alpha1
+kind: ServiceManager
+metadata:
+  name: my-subaccount-service-manager
+  namespace: default
+spec:
+  writeConnectionSecretToRef:
+    name: sap-btp-service-operator
+    namespace: default
+  forProvider:
+    subaccountRef:
+      name: ${subaccount_name}-subaccount-gitops ## Replace <I/D/C-User> with your ID

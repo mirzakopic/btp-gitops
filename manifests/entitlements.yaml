@@ -1,0 +1,12 @@
+apiVersion: account.btp.orchestrate.cloud.sap/v1alpha1
+kind: Entitlement
+metadata:
+  name: msq-entitlement
+  namespace: default
+spec:
+  forProvider:
+    serviceName: message-queuing
+    servicePlanName: standard
+    amount: 1
+    subaccountRef:
+      name: ${subaccount_name}-subaccount-gitops ## Replace <I/D/C-User> with your ID
