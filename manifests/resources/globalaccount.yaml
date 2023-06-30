@@ -1,0 +1,7 @@
+apiVersion: account.btp.orchestrate.cloud.sap/v1alpha1
+kind: GlobalAccount
+metadata:
+  name: dcom-global-account
+  annotations:
+    crossplane.io/external-name: SAP Cloud Orchestration Workshop
+spec: {}
