@@ -13,4 +13,4 @@ spec:
             - "topgun-4"
             - "topgun-5"
     providerConfigRef:
-        name: default
+        name: message-provider-config
