@@ -2,7 +2,6 @@ apiVersion: messagequeue.btp.orchestrate.cloud.sap/v1alpha1
 kind: Queue
 metadata:
     name: example
-    namespace: default 
 spec:
     forProvider:
         configuration:
