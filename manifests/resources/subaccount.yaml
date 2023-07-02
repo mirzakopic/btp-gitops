@@ -9,7 +9,7 @@ spec:
         name: dcom-global-account
     betaEnabled: true
     description: Created at DCom
-    region: eu10
+    region: us10
     subaccountAdmins: 
       - co_dcom_berlin_demo@sap.com
       - ${my_sap_email} ## gives you access to subaccount
