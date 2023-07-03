@@ -1,0 +1,16 @@
+apiVersion: pubsub.messagequeue.sap.crossplane.io/v1alpha1
+kind: Queue
+metadata:
+  name: example
+spec:
+  forProvider:
+    configuration:
+      maxMessageSizeInBytes: 4200000
+      maxRedeliveryCount: 3
+      accessType: "EXCLUSIVE"
+    topics:
+      - "topgun-3"
+      - "topgun-4"
+      - "topgun-5"
+  providerConfigRef:
+    name: message-provider-config

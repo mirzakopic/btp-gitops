@@ -1,4 +1,4 @@
-apiVersion: messagequeue.btp.orchestrate.cloud.sap/v1alpha1
+apiVersion: messagequeue.sap.crossplane.io/v1alpha1
 kind: ProviderConfig
 metadata:
   name: message-provider-config
